@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .qa-item {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+            cursor: pointer;
+        }
+
+        .question {
+            margin: 0;
+        }
+
+        .answer {
+            display: none; 
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .background-image {
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%;
+            background: url('image6.png') no-repeat center center/cover;
+            filter: blur(6px);
+            z-index: -1; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <section>
+        <h2 style="font-size: 50px;">Questions</h2>
+
+        <div class="qa-item">
+            <h3 class="question">Why was the Stamp Act important to the American Revolution?</h3>
+            <p class="answer">The Stamp Act was important because it made the colonists really angry. It was the first time the British government taxed them directly without asking for their permission. The colonists felt like they were being treated unfairly, and this helped spark the desire for independence.</p>
+        </div>
+
+        <div class="qa-item">
+            <h3 class="question">What happened as a result of the Stamp Act?</h3>
+            <p class="answer">After the Stamp Act was passed, many colonists protested against it. They didn't want to pay the tax, so groups like the Sons of Liberty formed to fight back. People even attacked the homes of tax collectors. The protests got so big that the British government decided to cancel the Stamp Act the next year.</p>
+        </div>
+
+        <div class="qa-item">
+            <h3 class="question">What did the Stamp Act accomplish?</h3>
+            <p class="answer">The Stamp Act was supposed to help the British government make money to pay for soldiers in America. But instead of helping, it made the colonists more upset. It showed them that they needed to stand up for their rights and eventually led to the American Revolution.</p>
+        </div>
+
+        <div class="qa-item">
+            <h3 class="question">How did the colonists respond to the Stamp Act?</h3>
+            <p class="answer">The colonists responded to the Stamp Act by organizing protests and writing letters to the British government. They also boycotted British goods, which means they refused to buy them. This united many colonists, and they began to see themselves as one group fighting against British control.</p>
+        </div>
+
+        <div class="qa-item">
+            <h3 class="question">What was the impact of the Stamp Act on British-American relations?</h3>
+            <p class="answer">The Stamp Act made British-American relations really bad. It created a lot of anger and distrust between the colonists and the British government. Colonists felt that their rights were being ignored, and this led to more people wanting to break away from Britain and become independent.</p>
+        </div>
+
+    </section>
+    <a href="index.html" style="text-align: center; font-size: 40px; display: block; margin: 20px 0; color: blue;">Back to Main Page</a>
+    <script>
+        document.querySelectorAll('.qa-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
